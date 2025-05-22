@@ -1,14 +1,30 @@
 # Dictionnaire Tadaksahak
 
-Ce dépôt contient un projet de numérisation et de gestion du dictionnaire de la langue Tadaksahak.  
-Le projet vise à organiser les données lexicales, faciliter les recherches, et proposer une API ou interface web.  
-Ce projet est une initiative personnelle à laquelle vous êtes invités à nous fournir toutes informations pouvant enrichir le contenu de la plateforme.  
-Pensé par un Adaksahak, réalisé pour les Idakssahak.
+Ce dépôt héberge un projet de numérisation et de valorisation du dictionnaire de la langue **Tadaksahak**, parlé par les communautés Idaksahak du Sahel.
+
+> Pensé par un Adaksahak, réalisé pour les Idakssahak.
+
+## Objectifs
+
+- Centraliser et structurer les données lexicales.
+- Fournir une interface web intuitive (multilingue : FR, EN, AR).
+- Permettre l’écoute audio des mots.
+- Offrir une base évolutive pour une future API ou app mobile.
 
 ## Contenu
-- Fichiers de configuration Termux
-- Script Git
-- Dictionnaire (à venir)
+
+- `index.html` – Interface utilisateur.
+- `data.js` – Données lexicales (mot, traductions, audio, exemple...).
+- `app.js` – Mécanique de recherche, pagination, et rendu dynamique.
+- `audios/` – Dossiers des fichiers audio.
+- Fichiers de configuration Git / Termux.
+
+## Contribution
+
+Le projet est une initiative personnelle. Toute aide (mots, corrections, enregistrements audio, retours techniques) est la bienvenue.
+
+Contact : [hamadineagmoctar@gmail.com](mailto:hamadineagmoctar@gmail.com)
 
 ## Auteur
-**Hamadine**
+
+**Hamadine** – Développeur autodidacte, passionné par sa culture et la transmission du savoir linguistique.
