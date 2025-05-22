@@ -1,1 +1,144 @@
-<h1>Dictionnaire Tadaksahak</h1><p>Bienvenue sur le projet</p>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dictionnaire Tadaksahak Multilingue</title>
+  <link rel="icon" href="images/idaksahak_round.png" type="image/png" />
+  <meta name="description" content="Dictionnaire audio multilingue Tadaksahak avec exemples et étymologie." />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 1rem;
+      background-color: #fcebd5;
+      color: #4b2e1f;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .search-bar, .lang-switch, .pagination {
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    .entry {
+      background: #fff5e1;
+      margin-bottom: 1.2rem;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    audio { margin-top: 0.5rem; }
+
+    button {
+      margin: 0.2rem;
+      padding: 0.5rem 1rem;
+      background: #c75c24;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover { background: #a7491d; }
+
+    .pagination button.active {
+      background-color: #d9822b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dictionnaire Tadaksahak Multilingue</h1>
+    <div class="lang-switch">
+      <button onclick="setLang('fr')">FR</button>
+      <button onclick="setLang('en')">EN</button>
+      <button onclick="setLang('ar')">AR</button>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Chercher un mot..." />
+    </div>
+  </header>
+
+  <main id="dictionary"></main>
+  <div id="pagination" class="pagination"></div>
+
+  <footer>
+    <p>&copy; 2025 • Projet Tadaksahak by Hamadine</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script>
+    let lang = "fr";
+    let currentPage = 1;
+    const itemsPerPage = 10;
+    let dictionary = data;
+
+    function setLang(newLang) {
+      lang = newLang;
+      renderDictionary(document.getElementById('searchInput').value);
+    }
+
+    function renderDictionary(filter = "") {
+      const container = document.getElementById("dictionary");
+      container.innerHTML = "";
+
+      const filtered = data.filter(entry =>
+        entry.mot.toLowerCase().includes(filter.toLowerCase())
+      );
+
+      dictionary = filtered;
+      const start = (currentPage - 1) * itemsPerPage;
+      const pageItems = filtered.slice(start, start + itemsPerPage);
+
+      pageItems.forEach(entry => {
+        const div = document.createElement("div");
+        div.className = "entry";
+
+        div.innerHTML = `
+          <h2>${entry.mot} <span style="font-size:0.9rem;">(${entry.categorie || ""})</span></h2>
+          <p><strong>${lang.toUpperCase()}:</strong> ${entry.traductions?.[lang] || ""}</p>
+          <p><em>${entry.definition || ""}</em></p>
+          <p><strong>Ex:</strong> ${entry.exemple?.[lang] || ""}</p>
+          ${entry.audio ? `<audio controls src="gitkeep/${entry.audio}"></audio>` : ""}
+        `;
+        container.appendChild(div);
+      });
+
+      generatePagination(filtered.length);
+    }
+
+    function generatePagination(totalItems) {
+      const totalPages = Math.ceil(totalItems / itemsPerPage);
+      const pag = document.getElementById("pagination");
+      pag.innerHTML = "";
+
+      for (let i = 1; i <= totalPages; i++) {
+        const btn = document.createElement("button");
+        btn.innerText = i;
+        btn.classList.toggle("active", i === currentPage);
+        btn.onclick = () => {
+          currentPage = i;
+          renderDictionary(document.getElementById('searchInput').value);
+        };
+        pag.appendChild(btn);
+      }
+    }
+
+    document.getElementById("searchInput").addEventListener("input", (e) => {
+      currentPage = 1;
+      renderDictionary(e.target.value);
+    });
+
+    window.onload = () => {
+      renderDictionary();
+    };
+  </script>
+</body>
+</html>
