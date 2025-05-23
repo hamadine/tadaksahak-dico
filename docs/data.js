@@ -15,7 +15,7 @@ const data = [
       "ar": "هذا الكيس كبير."
     },
     "etymologie": "Origine locale",
-    "audio": "audios/aber_mot.mp3"
+    "audio": "../audios/aber_mot.mp3"
   },
   {
     "mot": "abôrâ",
@@ -33,7 +33,7 @@ const data = [
       "ar": "يُزرع abôrâ في كل مكان."
     },
     "etymologie": "Origine agricole sahélienne",
-    "audio": "audios/abora_mot.mp3"
+    "audio": "../audios/abora_mot.mp3"
   },
   {
     "mot": "âcci",
@@ -51,7 +51,7 @@ const data = [
       "ar": "âcci أنه سيأتي."
     },
     "etymologie": "Commun tamazight",
-    "audio": "audios/acci_mot.mp3"
+    "audio": "../audios/acci_mot.mp3"
   },
   {
     "mot": "adabàra",
@@ -69,7 +69,7 @@ const data = [
       "ar": "إنها adabàra جيدة."
     },
     "etymologie": "Adapté du lexique islamique",
-    "audio": "audios/adabara_mot.mp3"
+    "audio": "../audios/adabara_mot.mp3"
   },
   {
     "mot": "ádǝbǝt",
@@ -87,7 +87,7 @@ const data = [
       "ar": "يستطيع فعل ذلك وحده."
     },
     "etymologie": "Base verbale tamazight",
-    "audio": "audios/adebet_mot.mp3"
+    "audio": "../audios/adebet_mot.mp3"
   },
   {
     "mot": "ádǝda",
@@ -105,7 +105,7 @@ const data = [
       "ar": "رحل بسرعة."
     },
     "etymologie": "Tamazight courant",
-    "audio": "audios/adeda_mot.mp3"
+    "audio": "../audios/adeda_mot.mp3"
   },
   {
     "mot": "aférig",
@@ -123,7 +123,7 @@ const data = [
       "ar": "الماعز في الحظيرة."
     },
     "etymologie": "Berbère pastoral",
-    "audio": "audios/aferig_mot.mp3"
+    "audio": "../audios/aferig_mot.mp3"
   },
   {
     "mot": "ákatab",
@@ -141,7 +141,7 @@ const data = [
       "ar": "كتابة واضحة على الحجر."
     },
     "etymologie": "Dérivé de l’arabe كتب",
-    "audio": "audios/akatab_mot.mp3"
+    "audio": "../audios/akatab_mot.mp3"
   },
   {
     "mot": "akô",
@@ -159,7 +159,7 @@ const data = [
       "ar": "ذهب إلى السوق."
     },
     "etymologie": "Commun tamasheq",
-    "audio": "audios/ako_mot.mp3"
+    "audio": "../audios/ako_mot.mp3"
   },
   {
     "mot": "alfajer",
@@ -177,7 +177,7 @@ const data = [
       "ar": "الفجر هادئ."
     },
     "etymologie": "Origine arabe",
-    "audio": "audios/alfajer_mot.mp3"
+    "audio": "../audios/alfajer_mot.mp3"
   },
   {
     "mot": "ážžãmán",
@@ -195,7 +195,7 @@ const data = [
       "ar": "الزمن يمر بسرعة."
     },
     "etymologie": "Dérivé classique",
-    "audio": "audios/azzaman_mot.mp3"
+    "audio": "../audios/azzaman_mot.mp3"
   },{
     "mot": "bàngû",
     "prononciation": "bangu",
@@ -212,7 +212,7 @@ const data = [
       "ar": "حفروا بئراً."
     },
     "etymologie": "Utilisation touarègue",
-    "audio": "audios/bangu_mot.mp3"
+    "audio": "../audios/bangu_mot.mp3"
   },
   {
     "mot": "bãngû",
@@ -230,7 +230,7 @@ const data = [
       "ar": "احمِ رأسك من الشمس."
     },
     "etymologie": "Origine tamasheq",
-    "audio": "audios/bangu2_mot.mp3"
+    "audio": "../audios/bangu2_mot.mp3"
   },
   {
     "mot": "bààri",
@@ -248,7 +248,7 @@ const data = [
       "ar": "الحصان يركض بسرعة."
     },
     "etymologie": "Commun à plusieurs dialectes",
-    "audio": "audios/baari_mot.mp3"
+    "audio": "../audios/baari_mot.mp3"
   },
   {
     "mot": "ccéédi",
@@ -266,7 +266,7 @@ const data = [
       "ar": "استخدم ملعقة للحساء."
     },
     "etymologie": "Lexique domestique",
-    "audio": "audios/ccedi_mot.mp3"
+    "audio": "../audios/ccedi_mot.mp3"
   },
   {
     "mot": "ccídi",
@@ -284,7 +284,7 @@ const data = [
       "ar": "أضف الملح إلى الصلصة."
     },
     "etymologie": "Usage culinaire local",
-    "audio": "audios/ccidi_mot.mp3"
+    "audio": "../audios/ccidi_mot.mp3"
   },
   {
     "mot": "ccíǰí",
@@ -302,7 +302,7 @@ const data = [
       "ar": "الليل هادئ."
     },
     "etymologie": "Lexique naturel",
-    "audio": "audios/cciji_mot.mp3"
+    "audio": "../audios/cciji_mot.mp3"
   },
   {
     "mot": "ccími",
@@ -320,7 +320,7 @@ const data = [
       "ar": "قل الحقيقة."
     },
     "etymologie": "Commun berbère",
-    "audio": "audios/ccimi_mot.mp3"
+    "audio": "../audios/ccimi_mot.mp3"
   },
   {
     "mot": "ccindén",
@@ -338,7 +338,7 @@ const data = [
       "ar": "بعضهم جاء."
     },
     "etymologie": "Dialectal varié",
-    "audio": "audios/ccinden_mot.mp3"
+    "audio": "../audios/ccinden_mot.mp3"
   },
   {
     "mot": "cchòho",
@@ -356,7 +356,7 @@ const data = [
       "ar": "ماذا تفعل؟"
     },
     "etymologie": "Racine interrogative locale",
-    "audio": "audios/ccoho_mot.mp3"
+    "audio": "../audios/ccoho_mot.mp3"
   },
   {
     "mot": "ccûdû",
@@ -374,7 +374,7 @@ const data = [
       "ar": "اجمع هذه الأوراق."
     },
     "etymologie": "Langue agropastorale",
-    "audio": "audios/ccudu_mot.mp3"
+    "audio": "../audios/ccudu_mot.mp3"
   },
   {
     "mot": "dida",
@@ -392,7 +392,7 @@ const data = [
       "ar": "انصرف الآن."
     },
     "etymologie": "Base verbale commune",
-    "audio": "audios/dida_mot.mp3"
+    "audio": "../audios/dida_mot.mp3"
   },{
     "mot": "dina",
     "prononciation": "dina",
@@ -409,7 +409,7 @@ const data = [
       "ar": "أمسك الكرة!"
     },
     "etymologie": "Origine orale",
-    "audio": "audios/dina_mot.mp3"
+    "audio": "../audios/dina_mot.mp3"
   },
   {
     "mot": "dini",
@@ -427,7 +427,7 @@ const data = [
       "ar": "خذ هذا!"
     },
     "etymologie": "Interaction courante",
-    "audio": "audios/dini_mot.mp3"
+    "audio": "../audios/dini_mot.mp3"
   },
   {
     "mot": "fééǰi",
@@ -445,7 +445,7 @@ const data = [
       "ar": "الخروف نائم."
     },
     "etymologie": "Langue pastorale",
-    "audio": "audios/feji_mot.mp3"
+    "audio": "../audios/feji_mot.mp3"
   },
   {
     "mot": "zûrû",
@@ -463,6 +463,6 @@ const data = [
       "ar": "ارجع إلى المنزل."
     },
     "etymologie": "Verbe courant tamazight",
-    "audio": "audios/zuru_mot.mp3"
+    "audio": "../audios/zuru_mot.mp3"
   }
 ];
