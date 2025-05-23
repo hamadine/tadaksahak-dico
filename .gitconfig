@@ -3,3 +3,5 @@
 	email = 212258452+hamadine@users.noreply.github.com
 [credential]
 	helper = store
+[safe]
+	directory = /storage/emulated/0/Download/tadaksahak-dico
