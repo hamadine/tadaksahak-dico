@@ -1,68 +1,83 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dictionnaire Tadaksahak</title>
-  <link rel="icon" href="images/idaksahak_round.png" type="image/png" />
-  <meta name="description" content="Dictionnaire Tadaksahak multilingue avec audio" />
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 1rem;
-      background-color: #fcebd5;
-      color: #4b2e1f;
-    }
-    header, footer { text-align: center; padding: 1rem 0; }
-    .lang-switch, .pagination, .search-bar { text-align: center; margin: 1rem 0; }
-    .entry {
-      background: #fff5e1;
-      margin-bottom: 1.2rem;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    }
-    audio { margin-top: 0.5rem; }
-    button {
-      margin: 0.2rem;
-      padding: 0.5rem 1rem;
-      background: #c75c24;
-      border: none;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover { background: #a7491d; }
-    .pagination button.active { background-color: #d9822b; }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Dictionnaire Tadaksahak Multilingue</h1>
-    <div class="lang-switch">
-      <button onclick="setLang('fr')">FR</button>
-      <button onclick="setLang('en')">EN</button>
-      <button onclick="setLang('ar')">AR</button>
+// docs/app.js
+
+let currentLang = 'fr';
+let currentPage = 1;
+const itemsPerPage = 5;
+
+// Fonction de changement de langue
+function setLang(lang) {
+  currentLang = lang;
+  currentPage = 1;
+  render();
+}
+
+// Fonction de tri alphabétique selon la prononciation
+function trierParPrononciation() {
+  data.sort((a, b) => a.prononciation.localeCompare(b.prononciation));
+  currentPage = 1;
+  render();
+}
+
+// Fonction de filtrage selon le mot recherché
+function searchEntries(entries, term) {
+  const lower = term.toLowerCase();
+  return entries.filter(e =>
+    e.mot.toLowerCase().includes(lower) ||
+    e.prononciation.toLowerCase().includes(lower) ||
+    e.traductions[currentLang]?.toLowerCase().includes(lower)
+  );
+}
+
+// Fonction de génération HTML d’une entrée
+function createEntryHTML(entry) {
+  return `
+    <div class="entry">
+      <h2>${entry.mot} (${entry.prononciation})</h2>
+      <p><strong>${entry.categorie}</strong> – ${entry.traductions[currentLang] || ''}</p>
+      <p><em>${entry.definition}</em></p>
+      <p>${entry.exemple[currentLang]}</p>
+      <p><small>${entry.etymologie}</small></p>
+      <audio controls src="${entry.audio}"></audio>
     </div>
-    <div class="search-bar">
-      <input type="text" id="searchInput" placeholder="Chercher un mot..." />
-    </div>
-  </header>
+  `;
+}
 
-  <!-- BOUTON DE TRI API -->
-  <div style="text-align:center; margin-bottom:1rem;">
-    <button onclick="trierParPrononciation()">Trier par prononciation (API)</button>
-  </div>
+// Rendu principal
+function render() {
+  const searchValue = document.getElementById('searchInput').value.trim();
+  const filteredData = searchEntries(data, searchValue);
+  const start = (currentPage - 1) * itemsPerPage;
+  const paginated = filteredData.slice(start, start + itemsPerPage);
 
-  <main id="dictionary"></main>
-  <div class="pagination" id="pagination"></div>
+  const dictionary = document.getElementById('dictionary');
+  dictionary.innerHTML = paginated.map(createEntryHTML).join('');
 
-  <footer>
-    <p>&copy; 2025 • Projet Tadaksahak by Hamadine</p>
-  </footer>
+  renderPagination(filteredData.length);
+}
 
-  <script src="data.js"></script>
-  <script src="app.js"></script>
-</body>
-</html>
+// Pagination dynamique
+function renderPagination(totalItems) {
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+  const pagination = document.getElementById('pagination');
+  pagination.innerHTML = '';
+
+  for (let i = 1; i <= totalPages; i++) {
+    const btn = document.createElement('button');
+    btn.textContent = i;
+    if (i === currentPage) btn.classList.add('active');
+    btn.onclick = () => {
+      currentPage = i;
+      render();
+    };
+    pagination.appendChild(btn);
+  }
+}
+
+// Initialisation
+document.getElementById('searchInput').addEventListener('input', () => {
+  currentPage = 1;
+  render();
+});
+
+// Lancer au chargement
+document.addEventListener('DOMContentLoaded', render);
