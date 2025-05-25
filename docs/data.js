@@ -1,468 +1,393 @@
-const data = [
+ module.exports = [
   {
-    "mot": "ábér",
-    "prononciation": "aber",
-    "categorie": "adjectif",
+    "mot": "A-múudǝr",
+    "prononciation": "ⴰⵎⵓⵓⴷⴻⵔ",
+    "categorie": "n.",
     "traductions": {
-      "fr": "C'est grand ou gros",
-      "en": "It is big or large",
-      "ar": "إنه كبير أو ضخم"
+      "fr": "Animal",
+      "en": "Animal",
+      "ar": "حيوان"
     },
-    "definition": "Utilisé pour décrire la taille.",
-    "exemple": {
-      "fr": "Ce sac est ábér.",
-      "en": "This bag is big.",
-      "ar": "هذا الكيس كبير."
-    },
-    "etymologie": "Origine locale",
-    "audio": "../audios/aber_mot.mp3"
+    "definition": "Nom désignant tout être vivant non humain.",
+    "etymologie": "",
+    "audio": "./audio/amuurdor.mp3"
   },
   {
-    "mot": "abôrâ",
-    "prononciation": "abora",
-    "categorie": "nom",
+    "mot": "A-rúuru",
+    "prononciation": "ⴰⵔⵓⵔⵓ",
+    "categorie": "n.",
     "traductions": {
-      "fr": "Le sorgho",
-      "en": "Sorghum",
-      "ar": "الذرة الرفيعة"
+      "fr": "Dos",
+      "en": "Back (body part)",
+      "ar": "ظهر"
     },
-    "definition": "Céréale africaine utilisée dans l’alimentation.",
-    "exemple": {
-      "fr": "Le abôrâ est cultivé partout.",
-      "en": "Sorghum is widely grown.",
-      "ar": "يُزرع abôrâ في كل مكان."
-    },
-    "etymologie": "Origine agricole sahélienne",
-    "audio": "../audios/abora_mot.mp3"
+    "definition": "Partie arrière du corps humain ou animal.",
+    "etymologie": "",
+    "audio": "./audio/aruuru.mp3"
   },
   {
-    "mot": "âcci",
-    "prononciation": "acci",
-    "categorie": "verbe",
+    "mot": "Agar",
+    "prononciation": "ⴰⴳⴰⵔ",
+    "categorie": "adj.",
     "traductions": {
-      "fr": "Il a dit",
-      "en": "He said",
-      "ar": "قال"
+      "fr": "Mauvais",
+      "en": "Bad",
+      "ar": "سيء"
     },
-    "definition": "Exprime le discours rapporté au passé.",
-    "exemple": {
-      "fr": "âcci qu’il viendrait.",
-      "en": "âcci he would come.",
-      "ar": "âcci أنه سيأتي."
-    },
-    "etymologie": "Commun tamazight",
-    "audio": "../audios/acci_mot.mp3"
+    "definition": "Adjectif qualifiant une chose ou situation négative.",
+    "etymologie": "",
+    "audio": "./audio/agar.mp3"
   },
   {
-    "mot": "adabàra",
-    "prononciation": "adabara",
-    "categorie": "nom",
+    "mot": "Baabá",
+    "prononciation": "ⴱⴰⴱⴰ",
+    "categorie": "n.",
     "traductions": {
-      "fr": "Solution",
-      "en": "Solution",
-      "ar": "حل"
+      "fr": "Ancêtre paternel",
+      "en": "Ancestor (paternal)",
+      "ar": "جد"
     },
-    "definition": "Un moyen de résoudre un problème.",
-    "exemple": {
-      "fr": "C’est une bonne adabàra.",
-      "en": "That's a good solution.",
-      "ar": "إنها adabàra جيدة."
-    },
-    "etymologie": "Adapté du lexique islamique",
-    "audio": "../audios/adabara_mot.mp3"
+    "definition": "Personne d’une lignée paternelle des générations précédentes.",
+    "etymologie": "",
+    "audio": "./audio/baaba.mp3"
   },
   {
-    "mot": "ádǝbǝt",
-    "prononciation": "adebet",
-    "categorie": "verbe",
+    "mot": "Barjí",
+    "prononciation": "ⴱⴰⵔⵊⵉ",
+    "categorie": "n.",
     "traductions": {
-      "fr": "Il, ça peut",
-      "en": "He/It can",
+      "fr": "Écorce",
+      "en": "Bark",
+      "ar": "قشر"
+    },
+    "definition": "Couche extérieure d’un tronc d’arbre.",
+    "etymologie": "",
+    "audio": "./audio/barji.mp3"
+  },
+  {
+    "mot": "Báarar",
+    "prononciation": "ⴱⴰⵔⴰⵔ",
+    "categorie": "n.",
+    "traductions": {
+      "fr": "Enfant",
+      "en": "Child",
+      "ar": "طفل"
+    },
+    "definition": "Être humain jeune, encore dépendant.",
+    "etymologie": "",
+    "audio": "./audio/baarar.mp3"
+  },
+  {
+    "mot": "Báy",
+    "prononciation": "ⴱⴰⵢ",
+    "categorie": "vt.",
+    "traductions": {
+      "fr": "Pouvoir (faire)",
+      "en": "Able, to be",
       "ar": "يستطيع"
     },
-    "definition": "Indique une capacité ou permission.",
-    "exemple": {
-      "fr": "ádǝbǝt le faire seul.",
-      "en": "He can do it alone.",
-      "ar": "يستطيع فعل ذلك وحده."
-    },
-    "etymologie": "Base verbale tamazight",
-    "audio": "../audios/adebet_mot.mp3"
+    "definition": "Verbe exprimant la capacité ou possibilité d’action.",
+    "etymologie": "",
+    "audio": "./audio/bay.mp3"
   },
   {
-    "mot": "ádǝda",
-    "prononciation": "adeda",
-    "categorie": "verbe",
+    "mot": "Bêr",
+    "prononciation": "ⴱⴻⵔ",
+    "categorie": "vi.",
     "traductions": {
-      "fr": "Il est parti",
-      "en": "He left",
-      "ar": "رحل"
+      "fr": "Être grand",
+      "en": "Big, to be",
+      "ar": "كبير"
     },
-    "definition": "Action de s’en aller.",
-    "exemple": {
-      "fr": "Il adǝda rapidement.",
-      "en": "He left quickly.",
-      "ar": "رحل بسرعة."
-    },
-    "etymologie": "Tamazight courant",
-    "audio": "../audios/adeda_mot.mp3"
+    "definition": "Verbe qualifiant ce qui possède une grande taille.",
+    "etymologie": "",
+    "audio": "./audio/ber.mp3"
   },
   {
-    "mot": "aférig",
-    "prononciation": "aferig",
-    "categorie": "nom",
+    "mot": "Bêr",
+    "prononciation": "ⴱⴻⵔ",
+    "categorie": "vt.",
     "traductions": {
-      "fr": "Enclos",
-      "en": "Enclosure",
-      "ar": "حظيرة"
+      "fr": "Agrandir",
+      "en": "Big, to make",
+      "ar": "يُكبّر"
     },
-    "definition": "Lieu fermé pour les animaux.",
-    "exemple": {
-      "fr": "Les chèvres sont dans l’aférig.",
-      "en": "The goats are in the enclosure.",
-      "ar": "الماعز في الحظيرة."
-    },
-    "etymologie": "Berbère pastoral",
-    "audio": "../audios/aferig_mot.mp3"
+    "definition": "Action de rendre quelque chose plus grand.",
+    "etymologie": "",
+    "audio": "./audio/ber.mp3"
   },
   {
-    "mot": "ákatab",
-    "prononciation": "akatab",
-    "categorie": "nom",
+    "mot": "Biidí",
+    "prononciation": "ⴱⵉⵉⴷⵉ",
+    "categorie": "n.",
     "traductions": {
-      "fr": "Une écriture",
-      "en": "A writing",
-      "ar": "كتابة"
+      "fr": "Os",
+      "en": "Bone (general)",
+      "ar": "عظم"
     },
-    "definition": "Texte ou signe graphique.",
-    "exemple": {
-      "fr": "ákatab claire sur la pierre.",
-      "en": "Clear writing on the stone.",
-      "ar": "كتابة واضحة على الحجر."
-    },
-    "etymologie": "Dérivé de l’arabe كتب",
-    "audio": "../audios/akatab_mot.mp3"
+    "definition": "Partie dure du squelette interne.",
+    "etymologie": "",
+    "audio": "./audio/biidi.mp3"
   },
   {
-    "mot": "akô",
-    "prononciation": "ako",
-    "categorie": "verbe",
+    "mot": "Booʃí",
+    "prononciation": "ⴱⵓⵛⵉ",
+    "categorie": "n.",
     "traductions": {
-      "fr": "Il, c'est allé",
-      "en": "He went",
-      "ar": "ذهب"
+      "fr": "Cendres",
+      "en": "Ashes",
+      "ar": "رماد"
     },
-    "definition": "Partir ou se déplacer.",
-    "exemple": {
-      "fr": "Il akô au marché.",
-      "en": "He went to the market.",
-      "ar": "ذهب إلى السوق."
-    },
-    "etymologie": "Commun tamasheq",
-    "audio": "../audios/ako_mot.mp3"
+    "definition": "Résidus de combustion.",
+    "etymologie": "",
+    "audio": "./audio/booshi.mp3"
   },
   {
-    "mot": "alfajer",
-    "prononciation": "alfajer",
-    "categorie": "nom",
+    "mot": "Bún",
+    "prononciation": "ⴱⵓⵏ",
+    "categorie": "vi.",
     "traductions": {
-      "fr": "Aube",
-      "en": "Dawn",
-      "ar": "الفجر"
+      "fr": "Être mort",
+      "en": "Dead, to be",
+      "ar": "ميت"
     },
-    "definition": "Moment où le jour se lève.",
-    "exemple": {
-      "fr": "L’alfajer est paisible.",
-      "en": "Dawn is peaceful.",
-      "ar": "الفجر هادئ."
-    },
-    "etymologie": "Origine arabe",
-    "audio": "../audios/alfajer_mot.mp3"
+    "definition": "État de non-vie.",
+    "etymologie": "",
+    "audio": "./audio/bun.mp3"
   },
   {
-    "mot": "ážžãmán",
-    "prononciation": "azzaman",
-    "categorie": "nom",
+    "mot": "Bún",
+    "prononciation": "ⴱⵓⵏ",
+    "categorie": "vt.",
     "traductions": {
-      "fr": "Le temps",
-      "en": "Time",
-      "ar": "الزمن"
+      "fr": "Mourir",
+      "en": "Die, to",
+      "ar": "يموت"
     },
-    "definition": "Durée ou passage des moments.",
-    "exemple": {
-      "fr": "ážžãmán passe vite.",
-      "en": "Time flies.",
-      "ar": "الزمن يمر بسرعة."
-    },
-    "etymologie": "Dérivé classique",
-    "audio": "../audios/azzaman_mot.mp3"
-  },{
-    "mot": "bàngû",
-    "prononciation": "bangu",
-    "categorie": "nom",
-    "traductions": {
-      "fr": "Le puits",
-      "en": "The well",
-      "ar": "البئر"
-    },
-    "definition": "Trou profond pour tirer de l’eau.",
-    "exemple": {
-      "fr": "Ils ont creusé un bàngû.",
-      "en": "They dug a well.",
-      "ar": "حفروا بئراً."
-    },
-    "etymologie": "Utilisation touarègue",
-    "audio": "../audios/bangu_mot.mp3"
+    "definition": "Passer de vie à trépas.",
+    "etymologie": "",
+    "audio": "./audio/bun.mp3"
   },
   {
-    "mot": "bãngû",
-    "prononciation": "bangu2",
-    "categorie": "nom",
+    "mot": "Bún",
+    "prononciation": "ⴱⵓⵏ",
+    "categorie": "n.",
     "traductions": {
-      "fr": "La tête",
-      "en": "The head",
-      "ar": "الرأس"
+      "fr": "Mort",
+      "en": "Death",
+      "ar": "موت"
     },
-    "definition": "Partie supérieure du corps.",
-    "exemple": {
-      "fr": "Protège ta bãngû du soleil.",
-      "en": "Protect your head from the sun.",
-      "ar": "احمِ رأسك من الشمس."
-    },
-    "etymologie": "Origine tamasheq",
-    "audio": "../audios/bangu2_mot.mp3"
+    "definition": "Cessation de toute activité vitale.",
+    "etymologie": "",
+    "audio": "./audio/bun.mp3"
   },
   {
-    "mot": "bààri",
-    "prononciation": "baari",
-    "categorie": "nom",
+    "mot": "Cíidaw",
+    "prononciation": "ⵛⵉⴷⴰⵡ",
+    "categorie": "n.",
     "traductions": {
-      "fr": "Le cheval",
-      "en": "The horse",
-      "ar": "الحصان"
+      "fr": "Oiseau",
+      "en": "Bird (general)",
+      "ar": "طائر"
     },
-    "definition": "Animal utilisé pour monter ou porter.",
-    "exemple": {
-      "fr": "Le bààri court vite.",
-      "en": "The horse runs fast.",
-      "ar": "الحصان يركض بسرعة."
-    },
-    "etymologie": "Commun à plusieurs dialectes",
-    "audio": "../audios/baari_mot.mp3"
+    "definition": "Animal à plumes qui vole.",
+    "etymologie": "",
+    "audio": "./audio/ciidaw.mp3"
   },
   {
-    "mot": "ccéédi",
-    "prononciation": "ccedi",
-    "categorie": "nom",
+    "mot": "Daw",
+    "prononciation": "ⴷⴰⵡ",
+    "categorie": "postp.",
     "traductions": {
-      "fr": "La cuillère",
-      "en": "Spoon",
-      "ar": "ملعقة"
+      "fr": "Chez (quelqu’un)",
+      "en": "At (somebody’s)",
+      "ar": "عند"
     },
-    "definition": "Ustensile pour manger.",
-    "exemple": {
-      "fr": "Utilise une ccéédi pour la soupe.",
-      "en": "Use a spoon for the soup.",
-      "ar": "استخدم ملعقة للحساء."
-    },
-    "etymologie": "Lexique domestique",
-    "audio": "../audios/ccedi_mot.mp3"
+    "definition": "Indique le lieu ou la personne de destination.",
+    "etymologie": "",
+    "audio": "./audio/daw.mp3"
   },
   {
-    "mot": "ccídi",
-    "prononciation": "ccidi",
-    "categorie": "nom",
+    "mot": "Dumbú",
+    "prononciation": "ⴷⵓⵎⴱⵓ",
+    "categorie": "vt.",
     "traductions": {
-      "fr": "Le sel",
-      "en": "Salt",
-      "ar": "الملح"
+      "fr": "Couper",
+      "en": "Cut, to",
+      "ar": "يقطع"
     },
-    "definition": "Substance utilisée pour assaisonner.",
-    "exemple": {
-      "fr": "Ajoute du ccídi à la sauce.",
-      "en": "Add salt to the sauce.",
-      "ar": "أضف الملح إلى الصلصة."
-    },
-    "etymologie": "Usage culinaire local",
-    "audio": "../audios/ccidi_mot.mp3"
+    "definition": "Séparer en morceaux à l’aide d’un outil.",
+    "etymologie": "",
+    "audio": "./audio/dumbu.mp3"
   },
   {
-    "mot": "ccíǰí",
-    "prononciation": "cciji",
-    "categorie": "nom",
+    "mot": "Fás",
+    "prononciation": "ⴼⴰⵙ",
+    "categorie": "n.",
     "traductions": {
-      "fr": "La nuit",
-      "en": "Night",
-      "ar": "الليل"
+      "fr": "Creusement",
+      "en": "Digging",
+      "ar": "حفر"
     },
-    "definition": "Période après le coucher du soleil.",
-    "exemple": {
-      "fr": "La ccíǰí est silencieuse.",
-      "en": "The night is quiet.",
-      "ar": "الليل هادئ."
-    },
-    "etymologie": "Lexique naturel",
-    "audio": "../audios/cciji_mot.mp3"
+    "definition": "Action de faire un trou.",
+    "etymologie": "",
+    "audio": "./audio/fas.mp3"
   },
   {
-    "mot": "ccími",
-    "prononciation": "ccimi",
-    "categorie": "nom",
+    "mot": "Fás",
+    "prononciation": "ⴼⴰⵙ",
+    "categorie": "vt.",
     "traductions": {
-      "fr": "La vérité",
-      "en": "Truth",
-      "ar": "الحقيقة"
+      "fr": "Creuser",
+      "en": "Dig, to",
+      "ar": "يحفر"
     },
-    "definition": "Ce qui est réel ou juste.",
-    "exemple": {
-      "fr": "Dis la ccími.",
-      "en": "Speak the truth.",
-      "ar": "قل الحقيقة."
-    },
-    "etymologie": "Commun berbère",
-    "audio": "../audios/ccimi_mot.mp3"
+    "definition": "Ouvrir un trou dans une surface.",
+    "etymologie": "",
+    "audio": "./audio/fas.mp3"
   },
   {
-    "mot": "ccindén",
-    "prononciation": "ccinden",
-    "categorie": "nom",
+    "mot": "Fufú",
+    "prononciation": "ⴼⵓⴼⵓ",
+    "categorie": "n.",
     "traductions": {
-      "fr": "Certains, d'autres",
-      "en": "Some, others",
-      "ar": "بعض، الآخرون"
+      "fr": "Froid (temps)",
+      "en": "Cold (weather)",
+      "ar": "برد"
     },
-    "definition": "Groupes différents dans un ensemble.",
-    "exemple": {
-      "fr": "Ccindén sont venus.",
-      "en": "Some came.",
-      "ar": "بعضهم جاء."
-    },
-    "etymologie": "Dialectal varié",
-    "audio": "../audios/ccinden_mot.mp3"
+    "definition": "Température basse de l’air.",
+    "etymologie": "",
+    "audio": "./audio/fufu.mp3"
   },
   {
-    "mot": "cchòho",
-    "prononciation": "ccoho",
-    "categorie": "interrogatif",
+    "mot": "Fúr",
+    "prononciation": "ⴼⵓⵔ",
+    "categorie": "vi.",
     "traductions": {
-      "fr": "Quoi ?",
-      "en": "What?",
-      "ar": "ماذا؟"
+      "fr": "Souffler (vent)",
+      "en": "Blow (wind), to",
+      "ar": "تهب"
     },
-    "definition": "Utilisé pour poser une question.",
-    "exemple": {
-      "fr": "Cchòho tu fais ?",
-      "en": "What are you doing?",
-      "ar": "ماذا تفعل؟"
+    "definition": "Déplacement d’air naturel.",
+    "etymologie": "",
+    "audio": "./audio/fur.mp3"
+  }
+  {
+    "mot": "Gánda",
+    "prononciation": "ⴳⴰⵏⴷⴰ",
+    "categorie": "n.",
+    "traductions": {
+      "fr": "Pays",
+      "en": "Country",
+      "ar": "بلد"
     },
-    "etymologie": "Racine interrogative locale",
-    "audio": "../audios/ccoho_mot.mp3"
+    "definition": "Territoire habité et organisé politiquement.",
+    "etymologie": "",
+    "audio": "./audio/ganda.mp3"
   },
   {
-    "mot": "ccûdû",
-    "prononciation": "ccudu",
-    "categorie": "verbe",
+    "mot": "Guŋgú",
+    "prononciation": "ⴳⵓⵏⴳⵓ",
+    "categorie": "n.",
     "traductions": {
-      "fr": "Ramasses",
-      "en": "Pick up",
-      "ar": "اجمع"
+      "fr": "Ventre",
+      "en": "Belly",
+      "ar": "بطن"
     },
-    "definition": "Action de collecter ou prendre du sol.",
-    "exemple": {
-      "fr": "Ccûdû ces feuilles.",
-      "en": "Pick up these leaves.",
-      "ar": "اجمع هذه الأوراق."
-    },
-    "etymologie": "Langue agropastorale",
-    "audio": "../audios/ccudu_mot.mp3"
+    "definition": "Partie du corps où se trouvent les organes digestifs.",
+    "etymologie": "",
+    "audio": "./audio/gunggu.mp3"
   },
   {
-    "mot": "dida",
-    "prononciation": "dida",
-    "categorie": "verbe",
+    "mot": "Hánʃi",
+    "prononciation": "ⵀⴰⵏⵛⵉ",
+    "categorie": "n.",
     "traductions": {
-      "fr": "Pars",
-      "en": "Go away",
-      "ar": "انصرف"
+      "fr": "Chien",
+      "en": "Dog (general)",
+      "ar": "كلب"
     },
-    "definition": "Demander à quelqu’un de partir.",
-    "exemple": {
-      "fr": "Dida maintenant.",
-      "en": "Leave now.",
-      "ar": "انصرف الآن."
-    },
-    "etymologie": "Base verbale commune",
-    "audio": "../audios/dida_mot.mp3"
-  },{
-    "mot": "dina",
-    "prononciation": "dina",
-    "categorie": "verbe",
-    "traductions": {
-      "fr": "Attrape-le",
-      "en": "Catch him",
-      "ar": "أمسكه"
-    },
-    "definition": "Saisir ou capturer une personne ou chose.",
-    "exemple": {
-      "fr": "Dina le ballon !",
-      "en": "Catch the ball!",
-      "ar": "أمسك الكرة!"
-    },
-    "etymologie": "Origine orale",
-    "audio": "../audios/dina_mot.mp3"
+    "definition": "Animal domestique canin.",
+    "etymologie": "",
+    "audio": "./audio/hanshi.mp3"
   },
   {
-    "mot": "dini",
-    "prononciation": "dini",
-    "categorie": "verbe",
+    "mot": "Hór",
+    "prononciation": "ⵀⵓⵔ",
+    "categorie": "vi.",
     "traductions": {
-      "fr": "Tiens",
-      "en": "Take it",
-      "ar": "خذ"
+      "fr": "S'amuser",
+      "en": "Amuse oneself, to",
+      "ar": "يمرح"
     },
-    "definition": "Action de donner ou proposer.",
-    "exemple": {
-      "fr": "Dini ça !",
-      "en": "Take this!",
-      "ar": "خذ هذا!"
+    "definition": "Prendre plaisir à une activité ludique.",
+    "etymologie": "",
+    "audio": "./audio/hor.mp3"
+   },
+  {
+    "mot": "Igdá ~ iddá ~ íd",
+    "prononciation": "ⵉⴳⴷⴰ",
+    "categorie": "conj.",
+    "traductions": {
+      "fr": "Parce que",
+      "en": "Because",
+      "ar": "لأن"
     },
-    "etymologie": "Interaction courante",
-    "audio": "../audios/dini_mot.mp3"
+    "definition": "Introduit une cause ou justification.",
+    "etymologie": "",
+    "audio": "./audio/igda.mp3"
   },
   {
-    "mot": "fééǰi",
-    "prononciation": "feji",
-    "categorie": "nom",
+    "mot": "Yibrár",
+    "prononciation": "ⵢⵉⴱⵔⴰⵔ",
+    "categorie": "vi.",
     "traductions": {
-      "fr": "Le mouton",
-      "en": "Sheep",
-      "ar": "الخروف"
+      "fr": "Être mauvais",
+      "en": "Bad, to be",
+      "ar": "يكون سيئًا"
     },
-    "definition": "Animal d’élevage à laine.",
-    "exemple": {
-      "fr": "Le fééǰi dort.",
-      "en": "The sheep is sleeping.",
-      "ar": "الخروف نائم."
-    },
-    "etymologie": "Langue pastorale",
-    "audio": "../audios/feji_mot.mp3"
+    "definition": "Verbe décrivant une mauvaise qualité ou nature.",
+    "etymologie": "",
+    "audio": "./audio/yibrar.mp3"
   },
   {
-    "mot": "zûrû",
-    "prononciation": "zuru",
-    "categorie": "verbe",
+    "mot": "Yiddár",
+    "prononciation": "ⵢⵉⴷⴷⴰⵔ",
+    "categorie": "vi.",
     "traductions": {
-      "fr": "Reviens",
-      "en": "Come back",
-      "ar": "ارجع"
+      "fr": "Être en vie",
+      "en": "Alive, to be",
+      "ar": "يعيش"
     },
-    "definition": "Action de retourner à un lieu.",
-    "exemple": {
-      "fr": "Zûrû à la maison.",
-      "en": "Come back home.",
-      "ar": "ارجع إلى المنزل."
+    "definition": "Être dans un état de vie.",
+    "etymologie": "",
+    "audio": "./audio/yiddar.mp3"
+  },
+  {
+    "mot": "Yíʃǝf",
+    "prononciation": "ⵢⵉⵛⴼ",
+    "categorie": "vi.",
+    "traductions": {
+      "fr": "Plonger",
+      "en": "Dive, to",
+      "ar": "يغوص"
     },
-    "etymologie": "Verbe courant tamazight",
-    "audio": "../audios/zuru_mot.mp3"
+    "definition": "S’enfoncer dans l’eau ou un liquide.",
+    "etymologie": "",
+    "audio": "./audio/yishif.mp3"
+  },
+  {
+    "mot": "Zaɣrí",
+    "prononciation": "ⵣⴰⵖⵔⵉ",
+    "categorie": "n.",
+    "traductions": {
+      "fr": "Jour",
+      "en": "Day",
+      "ar": "يوم"
+    },
+    "definition": "Période de 24 heures.",
+    "etymologie": "",
+    "audio": "./audio/zaghri.mp3"
   }
 ];
+  
